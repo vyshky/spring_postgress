@@ -15,13 +15,22 @@
             </column>
             <column name="organization" type="varchar(20)"/>
         </createTable>
+    </changeSet>
 
-         
+    <changeSet id="2" author="alexandr">
+        <addColumn tableName="offers">
+            <column name="phone" type="varchar(10)" defaultValue="8008008000">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
         <!--TODO :: UNIT tests-->
         <!--TODO :: добавить колонку в бд offer-->
         <!--TODO :: удалить колонку в бд-->	
         <!--TODO :: FOREIGN и PRIMARY ключи-->		
 		<!--        TODO:: sql-->
 		<!--        TODO:: migration-->
-    </changeSet>
+		<!--        TODO:: get set -->
+
 </databaseChangeLog>

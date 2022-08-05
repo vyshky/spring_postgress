@@ -7,4 +7,6 @@ import java.util.UUID;
 
 public interface OfferRepository extends JpaRepository<Offer, UUID> {
     List<Offer> findOffersByOrganization(String oraganization);
+
+    List<Offer> findOffersByPhone(String phone);
 }

@@ -11,4 +11,5 @@ public class Offer {
     @Id
     public UUID offerId;
     public String organization;
+    public String phone;
 }
